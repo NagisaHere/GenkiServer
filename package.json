@@ -4,7 +4,8 @@
   "description": "Unconjugate conjugated Japanese verbs.",
   "main": "index.js",
   "scripts": {
-    "test": "nyc mocha"
+    "test": "nyc mocha",
+    "server": "node ./server/server.js"
   },
   "repository": {
     "type": "git",
@@ -28,7 +29,11 @@
   },
   "homepage": "https://github.com/mistval/jp-verb-deconjugator#readme",
   "devDependencies": {
-    "mocha": "^10.2.0",
+    "mocha": "^10.8.2",
     "nyc": "^15.1.0"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "jp-verbs": "^1.1.0"
   }
 }
